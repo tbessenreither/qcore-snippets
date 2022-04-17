@@ -1,0 +1,134 @@
+{
+	"var": {
+		"prefix": "var",
+		"body": [
+			"{{var::${variable}}}"
+		],
+		"description": "Variable"
+	},
+	"var scoped": {
+		"prefix": "var scoped",
+		"body": [
+			"{{var::${variable}@${local}}}"
+		],
+		"description": "Variable"
+	},
+	"var filtered": {
+		"prefix": "var filtered",
+		"body": [
+			"{{var::${variable}|${strip}}}"
+		],
+		"description": "Variable"
+	},
+	"var wordlength": {
+		"prefix": "var wordlength",
+		"body": [
+			"{{var::${variable}|length=${length}|wordlength}}"
+		],
+		"description": "Variable"
+	},
+	"var charlength": {
+		"prefix": "var charlength",
+		"body": [
+			"{{var::${variable}|length=${length}|charlength}}"
+		],
+		"description": "Variable"
+	},
+	"date": {
+		"prefix": "date",
+		"body": [
+			"{{date::d-m-Y H:i:s::${variable}}}"
+		],
+		"description": "date"
+	},
+	"request": {
+		"prefix": "request",
+		"body": [
+			"{{request::${field}::${text}}}"
+		],
+		"description": "date"
+	},
+	"foreach": {
+		"prefix": "foreach",
+		"body": [
+			"{{foreach::\\$${array}}}",
+			"\t${0}",
+			"{{/foreach}}"
+		],
+		"description": "For Loop"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"{{if::\\$${variable}==${condition}}}",
+			"\t${0}",
+			"{{/if}}"
+		],
+		"description": "If statement"
+	},
+	"if else": {
+		"prefix": "if else",
+		"body": [
+			"{{if::\\$${variable}==${condition}}}",
+			"\t$a",
+			"{{else}}",
+			"\t$b",
+			"{{/if}}"
+		],
+		"description": "If else statement"
+	},
+	"script": {
+		"prefix": "script",
+		"body": [
+			"{{scripts::${scriptId}}}"
+		],
+	},
+	"template": {
+		"prefix": "template",
+		"body": [
+			"{{template::${templateUrl}}}"
+		],
+	},
+	"debug print var": {
+		"prefix": "debug print var",
+		"body": [
+			"{{print_var::${variable}}}"
+		],
+	},
+	"debug print scope": {
+		"prefix": "debug print scope",
+		"body": [
+			"{{print_scope::${local}}}"
+		],
+	},
+	"csrf token": {
+		"prefix": "csrf token",
+		"body": [
+			"{{csrf_token}}"
+		],
+	},
+	"csrf input": {
+		"prefix": "csrf input",
+		"body": [
+			"{{csrf_input}}"
+		],
+	},
+	"lorem ipsum": {
+		"prefix": "lorem ipsum",
+		"body": [
+			"{{ipsum::${sentences}}}"
+		],
+	},
+	"placeholder text": {
+		"prefix": "placeholder text",
+		"body": [
+			"{{ipsum::${sentences}}}"
+		],
+	},
+	"placeholder image": {
+		"prefix": "placeholder image",
+		"body": [
+			"{{ipsum_image::${width}::${height}::true::false::${murray}}}"
+		],
+	}
+}
