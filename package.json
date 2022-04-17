@@ -1,7 +1,7 @@
 {
 	"name": "qcore-snippets",
 	"displayName": "qcore-snippets",
-	"description": "",
+	"description": "This package contains the snippets for the qcore template engine.",
 	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.66.0"
