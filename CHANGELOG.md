@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/tbessenreither/qcore-snippets/compare/v1.0.1...v1.0.2) (2022-04-17)
+
+
+### Bug Fixes
+
+* added publisher ([f499f52](https://github.com/tbessenreither/qcore-snippets/commit/f499f523ec456245df5af96a656c93fef4425f7e))
+* added repository and changed readme some more so the packager does not anoy me; ([83b1194](https://github.com/tbessenreither/qcore-snippets/commit/83b1194317fe498a5501a62df5bdf7fa33bc9e9a))
+
 ### [1.0.1](https://github.com/tbessenreither/qcore-snippets/compare/v1.0.0...v1.0.1) (2022-04-17)
 
 
