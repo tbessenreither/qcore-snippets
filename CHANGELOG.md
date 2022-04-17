@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/tbessenreither/qcore-snippets/compare/v1.0.0...v1.0.1) (2022-04-17)
+
+
+### Features
+
+* added description ([b37bde0](https://github.com/tbessenreither/qcore-snippets/commit/b37bde024ee6e184ce52629f631653a5f48b08d2))
+
 ## 1.0.0 (2022-04-17)
 
 
