@@ -9,6 +9,10 @@
 	"categories": [
 		"Snippets"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tbessenreither/qcore-snippets"
+	},
 	"contributes": {
 		"snippets": [
 			{

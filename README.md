@@ -1,6 +1,4 @@
-# qcore-snippets README
-
-This is the README for your extension "qcore-snippets".
+# About qcore-snippets
 
 ## Features
 
