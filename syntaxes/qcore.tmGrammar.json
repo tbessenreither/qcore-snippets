@@ -1,0 +1,28 @@
+{
+	"scopeName": "text.html.derivative",
+	"patterns": [
+		{
+			"include": "#expression"
+		}
+	],
+	"repository": {
+		"expression": {
+			"patterns": [
+				{
+					"include": "#batlethStart"
+				},
+				{
+					"include": "#batlethEnd"
+				}
+			]
+		},
+		"batlethStart": {
+			"match": "({{\\/?[\\w_]+(?:\\:\\:[\\w\\d= $\\.]+)+(?:\\?[^|\\#]+)*(?:[\\|][\\w\\d= $\\.]+)*}})",
+			"name": "keyword.batlethStart"
+		},
+		"batlethEnd": {
+			"match": "{{/(?:[\\w_]+)}}",
+			"name": "keyword.batlethEnd"
+		}
+	}
+}

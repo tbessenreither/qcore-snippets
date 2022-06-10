@@ -15,6 +15,21 @@
 		"url": "https://github.com/tbessenreither/qcore-snippets"
 	},
 	"contributes": {
+		"languages": [
+			{
+				"id": "qcore",
+				"extensions": [
+					".html", ".htm", ".php"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "html",
+				"scopeName": "text.html.derivative",
+				"path": "./syntaxes/qcore.tmGrammar.json"
+			}
+		],
 		"snippets": [
 			{
 				"language": "html",

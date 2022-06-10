@@ -2,56 +2,56 @@
 	"var": {
 		"prefix": "var",
 		"body": [
-			"{{var::${variable}}}"
+			"{{var::${1:variable}}}"
 		],
 		"description": "Variable"
 	},
 	"var scoped": {
 		"prefix": "var scoped",
 		"body": [
-			"{{var::${variable}@${local}}}"
+			"{{var::${1:variable}@${2:local}}}"
 		],
 		"description": "Variable"
 	},
 	"var filtered": {
 		"prefix": "var filtered",
 		"body": [
-			"{{var::${variable}|${strip}}}"
+			"{{var::${1:variable}|${2:strip}}}"
 		],
 		"description": "Variable"
 	},
 	"var wordlength": {
 		"prefix": "var wordlength",
 		"body": [
-			"{{var::${variable}|length=${length}|wordlength}}"
+			"{{var::${1:variable}|length=${2:length}|wordlength}}"
 		],
 		"description": "Variable"
 	},
 	"var charlength": {
 		"prefix": "var charlength",
 		"body": [
-			"{{var::${variable}|length=${length}|charlength}}"
+			"{{var::${1:variable}|length=${2:length}|charlength}}"
 		],
 		"description": "Variable"
 	},
 	"date": {
 		"prefix": "date",
 		"body": [
-			"{{date::d-m-Y H:i:s::${variable}}}"
+			"{{date::d-m-Y H:i:s::${1:variable}}}"
 		],
 		"description": "date"
 	},
 	"request": {
 		"prefix": "request",
 		"body": [
-			"{{request::${field}::${text}}}"
+			"{{request::${1:field}::${2:text}}}"
 		],
 		"description": "date"
 	},
 	"foreach": {
 		"prefix": "foreach",
 		"body": [
-			"{{foreach::\\$${array}}}",
+			"{{foreach::\\$${1:array}}}",
 			"\t${0}",
 			"{{/foreach}}"
 		],
@@ -60,7 +60,7 @@
 	"if": {
 		"prefix": "if",
 		"body": [
-			"{{if::\\$${variable}==${condition}}}",
+			"{{if::\\$${1:variable}==${2:condition}}}",
 			"\t${0}",
 			"{{/if}}"
 		],
@@ -69,7 +69,7 @@
 	"if else": {
 		"prefix": "if else",
 		"body": [
-			"{{if::\\$${variable}==${condition}}}",
+			"{{if::\\$${1:variable}==${2:condition}}}",
 			"\t$a",
 			"{{else}}",
 			"\t$b",
@@ -80,25 +80,25 @@
 	"script": {
 		"prefix": "script",
 		"body": [
-			"{{scripts::${scriptId}}}"
+			"{{scripts::${1:scriptId}}}"
 		],
 	},
 	"template": {
 		"prefix": "template",
 		"body": [
-			"{{template::${templateUrl}}}"
+			"{{template::${1:templateUrl}}}"
 		],
 	},
 	"debug print var": {
 		"prefix": "debug print var",
 		"body": [
-			"{{print_var::${variable}}}"
+			"{{print_var::${1:variable}}}"
 		],
 	},
 	"debug print scope": {
 		"prefix": "debug print scope",
 		"body": [
-			"{{print_scope::${local}}}"
+			"{{print_scope::${1:local}}}"
 		],
 	},
 	"csrf token": {
@@ -116,19 +116,19 @@
 	"lorem ipsum": {
 		"prefix": "lorem ipsum",
 		"body": [
-			"{{ipsum::${sentences}}}"
+			"{{ipsum::${1:sentences}}}"
 		],
 	},
 	"placeholder text": {
 		"prefix": "placeholder text",
 		"body": [
-			"{{ipsum::${sentences}}}"
+			"{{ipsum::${1:sentences}}}"
 		],
 	},
 	"placeholder image": {
 		"prefix": "placeholder image",
 		"body": [
-			"{{ipsum_image::${width}::${height}::true::false::${murray}}}"
+			"{{ipsum_image::${1:width}::${2:height}::true::false::${3:murray}}}"
 		],
 	}
 }
