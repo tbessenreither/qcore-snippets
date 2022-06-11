@@ -30,6 +30,10 @@ https://marketplace.visualstudio.com/vscode
 
 https://marketplace.visualstudio.com/manage/publishers/tbessenreither
 
+add releases on github
+
+https://github.com/tbessenreither/qcore-snippets/releases
+
 ## Requirements
 
 There are no requirements
