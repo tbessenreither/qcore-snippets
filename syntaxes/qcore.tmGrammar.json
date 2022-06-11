@@ -1,28 +1,18 @@
 {
-	"scopeName": "text.html.derivative",
-	"patterns": [
-		{
-			"include": "#expression"
-		}
-	],
-	"repository": {
-		"expression": {
-			"patterns": [
-				{
-					"include": "#batlethStart"
-				},
-				{
-					"include": "#batlethEnd"
-				}
-			]
-		},
-		"batlethStart": {
-			"match": "({{\\/?[\\w_]+(?:\\:\\:[\\w\\d= $\\.]+)+(?:\\?[^|\\#]+)*(?:[\\|][\\w\\d= $\\.]+)*}})",
-			"name": "keyword.batlethStart"
+    "scopeName": "html.qcore",
+    "injectionSelector": "L:text.html.derivative, L:text.html.php",
+    "patterns": [
+        { "include": "#batlethStart" },
+        { "include": "#batlethEnd" }
+    ],
+    "repository": {
+        "batlethStart": {
+			"match": "({{\\/?[\\w_]+(?:\\:\\:[\\w\\d= $\\/.]+)*(?:\\?[^|\\#]+)*(?:[\\|][\\w\\d= $\\.]+)*}})",
+			"name": "entity.name.function.batlethStart"
 		},
 		"batlethEnd": {
 			"match": "{{/(?:[\\w_]+)}}",
-			"name": "keyword.batlethEnd"
+			"name": "entity.name.function.batlethEnd"
 		}
-	}
+    }
 }

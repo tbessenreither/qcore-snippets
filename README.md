@@ -20,6 +20,16 @@ Snippets for my CMS Template Engine.
 * placeholder text (riker ipsum)
 * placeholder image (filler murray)
 
+
+## Publishing
+First run `npm package` and confirm the license part.
+
+Then go to the Marketplace, login and upload the newly created vsix file.
+
+https://marketplace.visualstudio.com/vscode
+
+https://marketplace.visualstudio.com/manage/publishers/tbessenreither
+
 ## Requirements
 
 There are no requirements

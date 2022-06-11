@@ -7,6 +7,9 @@
 	"engines": {
 		"vscode": "^1.66.0"
 	},
+	"scripts": {
+		"package": "vsce package"
+	},
 	"categories": [
 		"Snippets"
 	],
@@ -15,20 +18,13 @@
 		"url": "https://github.com/tbessenreither/qcore-snippets"
 	},
 	"contributes": {
-		"languages": [
-			{
-				"id": "qcore",
-				"extensions": [
-					".html",
-					".htm",
-					".php"
-				]
-			}
-		],
 		"grammars": [
 			{
-				"language": "html",
-				"scopeName": "text.html.derivative",
+				"injectTo": [
+					"text.html.derivative",
+					"text.html.php"
+				],
+				"scopeName": "html.qcore",
 				"path": "./syntaxes/qcore.tmGrammar.json"
 			}
 		],
