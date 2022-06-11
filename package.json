@@ -22,7 +22,8 @@
 			{
 				"injectTo": [
 					"text.html.derivative",
-					"text.html.php"
+					"text.html.php",
+					"source.css"
 				],
 				"scopeName": "html.qcore",
 				"path": "./syntaxes/qcore.tmGrammar.json"

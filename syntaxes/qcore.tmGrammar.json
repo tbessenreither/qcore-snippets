@@ -1,6 +1,6 @@
 {
     "scopeName": "html.qcore",
-    "injectionSelector": "L:text.html.derivative, L:text.html.php",
+    "injectionSelector": "L:text.html.derivative, L:text.html.php, L:source.css",
     "patterns": [
         { "include": "#batlethStart" },
         { "include": "#batlethEnd" }
