@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/tbessenreither/qcore-snippets/compare/v1.1.0...v1.1.1) (2022-06-11)
+
+
+### Bug Fixes
+
+* fixed issue with wrong placeholders in snippets; ([3671f1d](https://github.com/tbessenreither/qcore-snippets/commit/3671f1ddf53638d0a56ac002a1066afe7aa0708d))
+* syntax highlighting now working correctly by injecting instead of overwriting; ([682352d](https://github.com/tbessenreither/qcore-snippets/commit/682352db2efdc017001701f74e5a5b91cf4647d4))
+
 ## [1.1.0](https://github.com/tbessenreither/qcore-snippets/compare/v1.0.2...v1.1.0) (2022-06-10)
 
 
