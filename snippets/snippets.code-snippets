@@ -48,35 +48,6 @@
 		],
 		"description": "date"
 	},
-	"foreach": {
-		"prefix": "foreach",
-		"body": [
-			"{{foreach::\\$${1:array}}}",
-			"\t${0}",
-			"{{/foreach}}"
-		],
-		"description": "For Loop"
-	},
-	"if": {
-		"prefix": "if",
-		"body": [
-			"{{if::\\$${1:variable}==${2:condition}}}",
-			"\t${0}",
-			"{{/if}}"
-		],
-		"description": "If statement"
-	},
-	"if else": {
-		"prefix": "if else",
-		"body": [
-			"{{if::\\$${1:variable}==${2:condition}}}",
-			"\t$a",
-			"{{else}}",
-			"\t$b",
-			"{{/if}}"
-		],
-		"description": "If else statement"
-	},
 	"script": {
 		"prefix": "script",
 		"body": [
@@ -130,5 +101,34 @@
 		"body": [
 			"{{ipsum_image::${1:width}::${2:height}::true::false::${3:murray}}}"
 		],
+	},
+	"foreach": {
+		"prefix": "foreach",
+		"body": [
+			"{{foreach::\\$${1:array}}}",
+			"\t$0",
+			"{{/foreach}}"
+		],
+		"description": "For Loop"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"{{if::\\$${1:variable}==${2:condition}}}",
+			"\t$0",
+			"{{/if}}"
+		],
+		"description": "If statement"
+	},
+	"if else": {
+		"prefix": "if else",
+		"body": [
+			"{{if::\\$${1:variable}==${2:condition}}}",
+			"\t${3:then}",
+			"{{else}}",
+			"\t${4:else}",
+			"{{/if}}"
+		],
+		"description": "If else statement"
 	}
 }
