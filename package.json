@@ -23,6 +23,7 @@
 				"injectTo": [
 					"text.html.derivative",
 					"text.html.php",
+					"text.snap.html.php",
 					"source.css"
 				],
 				"scopeName": "html.qcore",

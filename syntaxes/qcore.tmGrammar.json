@@ -1,18 +1,29 @@
 {
     "scopeName": "html.qcore",
-    "injectionSelector": "L:text.html.derivative, L:text.html.php, L:source.css",
+    "injectionSelector": "L:text.html.derivative, L:text.html.php, L:text.snap.html.php, L:source.css",
     "patterns": [
-        { "include": "#batlethStart" },
-        { "include": "#batlethEnd" }
+        {
+            "include": "#batlethMid"
+        },
+        {
+            "include": "#batlethStart"
+        },
+        {
+            "include": "#batlethEnd"
+        }
     ],
     "repository": {
+        "batlethMid": {
+            "match": "({{else}})",
+            "name": "entity.name.function.batlethMid"
+        },
         "batlethStart": {
-			"match": "({{\\/?[\\w_]+(?:\\:\\:[^\\|\\?]+)*(?:\\?[^|\\#]+)*(?:[\\|][\\w\\d= $\\.]+)*}})",
-			"name": "entity.name.function.batlethStart"
-		},
-		"batlethEnd": {
-			"match": "{{/(?:[\\w_]+)}}",
-			"name": "entity.name.function.batlethEnd"
-		}
+            "match": "({{\\/?[\\w_]+(?:\\:\\:[^\\|\\?]+)*(?:\\?[^|\\#]+)*(?:[\\|][\\w\\d= $\\.]+)*}})",
+            "name": "entity.name.function.batlethStart"
+        },
+        "batlethEnd": {
+            "match": "{{/(?:[\\w_]+)}}",
+            "name": "entity.name.function.batlethEnd"
+        }
     }
 }
